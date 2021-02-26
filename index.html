@@ -1,0 +1,63 @@
+<script>
+function Ok_OnClick(event){
+if(document.getElementsByName("textName")[0].value == ""){alert("请输入内容");return;
+}//getElementByIdvar table;
+var tableList = document.getElementsByTagName("TABLE");for(var i = 0 ; i < tableList.length ; i++) {if(tableList[i].name == "tableName") {table = tableList[i]break;}}
+var value = document.getElementsByName("textName")[0].value;var index = table.rows.length;table.insertRow(index);table.rows(index).insertCell(0);
+table.rows(index).cells(0).innerText = value;
+document.getElementsByName("textName")[0].value = "";}
+</script><HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"><TITLE>留言版</TITLE><STYLE>
+td{width:20%;height:20px;border-bottom:1px solid black;border-right:1px solidblack;cursor:default;}div{font-size:13px;}
+th{height:20px;font-size:12px;font-weight:normal;border-bottom:2px solidblack;background-color:#CCCCCC}table{border:1px solid black;font-size:13px;}</STYLE></HEAD>
+<BODY oncontextmenu="return false;"">
+<TABLE name="tableName" width="70%" align="center" cellpadding="0"cellspacing="0"><TR>
+<TH colspan="4" style="">留言版</TH>
+</TR>
+<TR>
+<TD>呵呵，一个超简陋的留言版 ^_^</TD></TR></TABLE>
+<BR>
+<div align="center">
+<textarea rows="2" name="textName" id="textId" cols="20"
+style="width: 70%; clip: rect(0pt, 47pt, 18pt, 0pt); font-family:宋体; font-size: 10pt;
+font-weight: normal; font-style: normal;text-align: left; vertical-align: middle; text-indent: 0;color: #000000; background-attachment: fixed; background-color: #EEEEEE; border: 1pxsolid #0xf8f8f8"></textarea></div>
+<BR>
+<div align="center">
+<input type="button" value="提交" onclick="return Ok_OnClick(window.event);"
+style="align:center ; width:60 ; height: 21; clip: rect(0pt, 47pt, 18pt, 0pt); font-family:宋体;font-size: 10pt; font-weight: normal; font-style: normal; cursor: hand; text-align: center;vertical-align: middle; text-indent: 0; color: #000000; background-attachment: fixed;background-color: #d8d8d8; border: 1px solid #59b4f7"><!--position: absolute; left: 342; top: 184; --></div></BODY></HTML>                  
+ 
+简洁的留言板html代码 
+<script>
+function Ok_OnClick(event){
+if(document.getElementsByName("textName")[0].value == ""){alert("请输入内容");return;
+}//getElementByIdvar table;
+var tableList = document.getElementsByTagName("TABLE");for(var i = 0 ; i < tableList.length ; i++) {if(tableList[i].name == "tableName") {table = tableList[i]break;}}
+var value = document.getElementsByName("textName")[0].value;var index = table.rows.length;table.insertRow(index);
+table.rows(index).insertCell(0);
+table.rows(index).cells(0).innerText = value;
+document.getElementsByName("textName")[0].value = "";}
+</script>
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"><TITLE>留言版</TITLE><STYLE>
+td{width:20%;height:20px;border-bottom:1px solid
+black;border-right:1px solid black;cursor:default;}div{font-size:13px;}
+th{height:20px;font-size:12px;font-weight:normal;border-bottom:2pxsolid black;background-color:#CCCCCC}
+table{border:1px solid black;font-size:13px;}</STYLE></HEAD>
+<BODY oncontextmenu="return false;"">
+<TABLE name="tableName" width="70%" align="center" cellpadding="0"cellspacing="0">
+<TR>
+<TH colspan="4" style="">留言版</TH></TR><TR>
+<TD>留言版</TD></TR></TABLE><BR>
+<div align="center">
+<textarea rows="2" name="textName" id="textId" cols="20"
+style="width:70%;clip:rect(0pt,47pt,18pt,0pt);font-family:宋体;font-size: 10pt; font-weight: normal; font-style: normal;text-align:left; vertical-align: middle; text-indent: 0; color: #000000;
+background-attachment: fixed; background-color: #EEEEEE; border: 1pxsolid #0xf8f8f8"></textarea>
+</div><BR>
+<div align="center">
+<input type="button" value="提交" onclick="returnOk_OnClick(window.event);"
+style="align:center;width:60;height:21;clip:rect(0pt,47pt,18pt,0pt); font-family:宋体; font-size: 10pt; font-weight: normal;
+font-style: normal; cursor: hand; text-align: center; vertical-align:middle; text-indent: 0; color: #000000; background-attachment: fixed;background-color: #d8d8d8; border: 1px solid #59b4f7">
+<!--position: absolute; left: 342; top: 184; --></div></BODY></HTML>
+ 
+
